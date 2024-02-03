@@ -9,6 +9,7 @@ import silver_ribbon from "../assets/silver_ribbon.png";
 import bronze_ribbon from "../assets/bronze_ribbon.png";
 import timeline_img_phone from "../assets/timeline_img_phone_copy2.png";
 import "./styles.css";
+import Timer_2024 from "./Timer_2024";
 
 const navigateToLink = () => {
   window.location.href =
@@ -127,6 +128,10 @@ const Mobile = () => {
 
       <div className="flex flex-col align-items-center justify-center ">
         <img src={logo} className="w-full p-10 pt-20 object-fit my-10 "></img>
+        <div className="flex flex-col  justify-center items-center pb-10">
+          <Timer_2024 />
+        </div>
+
         <div className="flex justify-center items-center">
           <button
             className="pulseBox font-['Koulen'] px-3 py-2 rounded-lg "
@@ -158,7 +163,6 @@ const Mobile = () => {
           challenges.
         </p>
       </div>
-
 
       {/* domain */}
       <div className="flex flex-col px-5 pt-20 align-items-center justify-center">
@@ -202,7 +206,7 @@ const Mobile = () => {
 
       {/* Timeline */}
       <div className="flex items-center justify-center mt-20 ">
-         <img src={timeline_img_phone} alt="" className="h-auto" />
+        <img src={timeline_img_phone} alt="" className="h-auto" />
       </div>
       {/* prizes */}
       <div className="text-white mt-20 text-center ">
@@ -318,7 +322,6 @@ const Mobile = () => {
           </div>
         </div>
       </div>
-     
     </div>
   );
 };
