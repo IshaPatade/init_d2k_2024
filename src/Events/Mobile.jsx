@@ -10,13 +10,24 @@ import bronze_ribbon from "../assets/bronze_ribbon.png";
 import timeline_img_phone from "../assets/timeline_img_phone_copy2.png";
 import "./styles.css";
 import Timer_2024 from "./Timer_2024";
+import Sponsor from "../assets/Sponsor.jpg";
+import TitleSponsor from "../assets/Title_Sponsor.jpg";
 
 const navigateToLink = () => {
   window.location.href =
     "https://unstop.com/hackathons/data-2-knowledge-shri-vile-parle-kelavani-mandals-dwarkadas-j-sanghvi-college-of-engineering-djsce-mumbai-874519?lb=gLcAz6g7";
 };
 
+const navigateToLink1 = () => {
+  window.location.href = "https://dextralabs.com/";
+};
+const navigateToLink2 = () => {
+  window.location.href = "https://www.goldenorioleedu.com/";
+};
+
+
 const Mobile = () => {
+  
   const options = {
     particles: {
       number: {
@@ -244,6 +255,41 @@ const Mobile = () => {
           Prizes worth 50K +
         </div> */}
       </div>
+
+      {/* Sponsors */}
+      <div className="flex flex-col px-5 pt-20 align-items-center justify-center">
+        {/* <div className="mb-2 text-center">
+          <span className="text-white text-[32px] font-normal font-['Koulen']">
+            DOM
+          </span>
+          <span className="text-yellow-400 text-[32px] font-normal font-['Koulen']">
+            AI
+          </span>
+          <span className="text-white text-[32px] font-normal font-['Koulen']">
+            NS
+          </span>
+        </div> */}
+
+        <div className="font-[koulen] flex flex-col items-center justify-center  text-white mt-[5vh]  ">
+          <div onClick={navigateToLink1} className="cursor-pointer">
+            <div className="text-[28px] text-center">Title Sponsor</div>
+            <img
+              className="  w-[70vw] object-fit mt-2 mb-8 "
+              src={TitleSponsor}
+            ></img>
+          </div>
+          <div onClick={navigateToLink2} className="cursor-pointer">
+            <div className="text-[22px] text-center">
+              Overseas Education Partner
+            </div>
+            <img
+              className="  w-[70vw] object-fit mt-2 mb-8 "
+              src={Sponsor}
+            ></img>
+          </div>
+        </div>
+      </div>
+
       {/* faq */}
       <div className="faq pt-20">
         <div class="row md:mx-auto">
