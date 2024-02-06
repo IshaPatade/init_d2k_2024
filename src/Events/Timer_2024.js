@@ -23,7 +23,7 @@ const Timer_2024 = () => {
     // <div className="font-['Montserrat'] bg-gradient-to-r from-fuchsia-600 to-pink-600  p-1 w-[70%] h-[75%]">
     <>
       <div className="my-1  md:w-[70%] md:h-[75%] text-white font-bold text-lg mb-3 timer_2024">
-        Event Starts In!!!!
+        Coding Round Ends In!
       </div>
       <div className="bg-none p-1 md:w-[70%] md:h-[75%] border border-solid border-gray-500 timer_2024">
         {time / DAY > 0 ? (
