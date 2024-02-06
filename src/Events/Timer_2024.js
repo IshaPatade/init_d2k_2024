@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo } from "react";
 
 const Timer_2024 = () => {
   // const deadline = "February, 6, 2024";
-  const parsedDeadline = 1707177600000;
+  const parsedDeadline = 1707213600000;
   const [time, setTime] = React.useState(parsedDeadline - Date.now());
 
   const SECOND = 1000;
